@@ -16,7 +16,7 @@ body * {
 #container {
   width: 360px;
   margin: 56px auto 0px;
-  padding: 0 24px; /*0 encima embaixo, 24 nas laterais*/
+  padding: 0 24px;
 }
 /***********imagem e paragrafo*****************/
 #profile {
@@ -37,15 +37,16 @@ body * {
 
 /***********ESTILIZANDO LINKS DO BOTÃO*****************/
 ul {
-  list-style: none; /*tirando os pontinho */
-  display: flex; /*elementos dentro da caixa, trabalha com os elementos dentro da caixa fiquem um ao lado do outro, */
+  list-style: none;
+  display: flex;
   flex-direction: column;
-  gap: 16px; /*espaço entre os elementos */
+  gap: 16px;
+  padding: 24px 0;
 }
 ul li a {
   display: flex;
-  align-items: center; /*vai alinhar o texto no centro da caixa do botão*/
-  justify-content: center; /*pegou o conteudo e alinhou ao meio, text align: center funciona tbm porque é texto*/
+  align-items: center;
+  /justify-content: center;
   padding: 16px 24px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.1);
@@ -54,9 +55,9 @@ ul li a {
   border-radius: 8px;
   backdrop-filter: blur(4px); /**/
   -webkit-backdrop-filter: blur(4px);
-  text-decoration: none; /*tira o sublinhado*/
-  font-weight: 500; /*peso da fonte*/
-  font-weight: bold; /*acima de 400 é bold*/
+  text-decoration: none;
+  font-weight: 500;
+  font-weight: bold;
   transition: background 0.2s;
 }
 
@@ -64,4 +65,12 @@ ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
   border: 1.5px solid white;
 }
-/**/
+
+/***********Estilizando ícones *****************/
+#social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px 0;
+  font-size: 24px;
+}
