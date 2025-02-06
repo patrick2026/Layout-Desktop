@@ -33,3 +33,34 @@ body * {
   line-height: 24px;
   margin-top: 8px;
 }
+
+/***********ESTILIZANDO LINKS DO BOTÃO*****************/
+ul {
+  list-style: none; /*tirando os pontinho */
+  display: flex; /*elementos dentro da caixa, trabalha com os elementos dentro da caixa fiquem um ao lado do outro, */
+  flex-direction: column;
+  gap: 16px; /*espaço entre os elementos */
+}
+ul li a {
+  display: flex;
+  align-items: center; /*vai alinhar o texto no centro da caixa do botão*/
+  justify-content: center; /*pegou o conteudo e alinhou ao meio, text align: center funciona tbm porque é texto*/
+  padding: 16px 24px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  backdrop-filter: blur(4px); /**/
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none; /*tira o sublinhado*/
+  font-weight: 500; /*peso da fonte*/
+  font-weight: bold; /*acima de 400 é bold*/
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid white;
+}
+/**/
