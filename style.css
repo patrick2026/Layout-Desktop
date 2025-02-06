@@ -16,8 +16,9 @@ body * {
 #container {
   width: 360px;
   margin: 56px auto 0px;
+  padding: 0 24px; /*0 encima embaixo, 24 nas laterais*/
 }
-
+/***********imagem e paragrafo*****************/
 #profile {
   text-align: center;
   padding: 24px;
